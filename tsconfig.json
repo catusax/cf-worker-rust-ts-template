@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "esnext",
+    "target": "esnext",
+    "lib": ["esnext", "webworker"],
+    "alwaysStrict": true,
+    "strict": true,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "types": ["@cloudflare/workers-types"]
+  },
+  "include": [
+    "./ts/*.ts",
+    "./ts/**/*.ts",
+    "./node_modules/@cloudflare/workers-types/index.d.ts"
+, "ts/handler.ts"  ],
+  "exclude": ["node_modules/", "dist/"]
+}
